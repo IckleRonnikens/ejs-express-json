@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300);
 
 *,
 *:before,
@@ -20,43 +20,65 @@ body {
   background-color: #ffffff;
   min-height: 100%;
   box-sizing: border-box;
-  animation: fadein 2s;
   position: relative;
   margin: 0;
 }
 
-h1  {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  color: #292b2c;
-  text-align: center; 
-  padding-top: 6rem;
-  }
+header {
+    height: auto;
+}
 
- h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #292b2c;
+main {
+  background-color: #1e1e1e;
+  overflow: hidden;
+}
+
+
+footer {
+    color: #787878;
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    padding: 24px 0;
+}
+
+.fill-viewport-height {min-height: 95vh;}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 p {
   font-family: inherit;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #292b2c;
 }
 
+.body-text {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+img {
+     width: 100%;
+     height: auto;
+}
 
 li {
   font-family: inherit;
   font-weight: 100;
 }
 
-a:link {color: #292b2c; }
-a:hover {color: #292b2c; text-decoration: underline;}
-a:visited {color: #292b2c; }
+a:link {color: #000; }
+a:hover {color: #000; text-decoration: underline;}
+a:visited {color: #000; }
 
-hr {background-color: #292b2c;}
+hr {background-color: #000;}
 
 small {font-size: .5em; padding-top: 0;}
 
@@ -65,25 +87,52 @@ small {font-size: .5em; padding-top: 0;}
 }
 
 
-/* NAVBAR  */
-.navbar a:link {color: #fff;}
-.navbar a:hover {color: #fff; background-color: #343a40; text-decoration: underline; }
-.navbar a:visited {color: #fff;}
+/* NAVIGATIONAL MENU */
 
-
-.navbar-color, .navbar-header, .navbar-toggle, .icon-bar {
-  background-color: #343a40;
-  color: #fff;
+nav {
+  background-color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
 }
 
-@media only screen and (max-width: 600px) {
-  .nav-background {
-      background-color: #343a40;
-      color: #fff;
-    }
+nav ul li a {
+  color: #515352!important;
+  text-transform: uppercase;
 }
 
-.dropdown-menu {background-color: #343a40;}
+.navbar-brand {
+  color: #515352!important;
+  text-transform: uppercase;
+}
+
+.navbar-brand:hover {color: #fff!important;}
+nav ul li a:hover {color: #fff!important;}
+
+.nav-item .dropdown {
+    background-color: none!important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu{
+  background-color: #000;
+  border: transparent;
+  border: none;
+}
+.dropdown-menu .dropdown-item > li > a:hover {
+  background-image: none;
+  background-color: #000!important;
+}
+
+.dropdown-content a:hover {
+    background-color: transparent;
+}
+
+.navbar-toggler-icon { color: #515352!important; }
 
 /**  Header Navigation **/
 
@@ -136,7 +185,7 @@ small {font-size: .5em; padding-top: 0;}
 
 .about {  
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   line-height: 160%;
   min-height: 100vh;
   color: #292b2c;
@@ -146,7 +195,7 @@ small {font-size: .5em; padding-top: 0;}
 
 /* SIDEBAR  */
 .sidebar {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   line-height: 160%;
   min-height: 100vh;
   color: #292b2c;
@@ -163,7 +212,7 @@ small {font-size: .5em; padding-top: 0;}
   background-size: cover;
   position: relative;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 .gamers a:hover {color: #292b2c; font-weight: bold;}
 .gamers hr {background-color: #292b2c;}
@@ -175,7 +224,7 @@ small {font-size: .5em; padding-top: 0;}
   background-color: #292b2c;
   position: relative;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #ffffff;
 }
 .featured-review h1 {color: #ffffff;}
@@ -187,7 +236,7 @@ small {font-size: .5em; padding-top: 0;}
 .reviews {
   background-color: #ffffff;
   color: #292b2c;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -195,7 +244,7 @@ small {font-size: .5em; padding-top: 0;}
 .review-details {
   background-color: #ffffff;
   color: #292b2c;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -203,7 +252,7 @@ small {font-size: .5em; padding-top: 0;}
 .review-info {
   background-color: #fff;
   color: #292b2c;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -221,7 +270,7 @@ small {font-size: .5em; padding-top: 0;}
   background-color: #292b2c;
   position: relative;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #ffffff;
 }
 .featured-goty h1, .featured-goty h2, .featured-goty p {color: #ffffff;}
@@ -231,7 +280,7 @@ small {font-size: .5em; padding-top: 0;}
 .goty {
   background-color: #ffffff;
   color: #292b2c;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -239,7 +288,7 @@ small {font-size: .5em; padding-top: 0;}
 .goty-details {
   background-color: #ffffff;
   color: #292b2c;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -247,7 +296,7 @@ small {font-size: .5em; padding-top: 0;}
 .goty-info {
   background-color: #fff;
   color: #292b2c;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -273,7 +322,7 @@ small {font-size: .5em; padding-top: 0;}
 
 .gallerydetails {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1rem;
   min-height: 100vh;
   padding: 0rem;
@@ -305,7 +354,7 @@ small {font-size: .5em; padding-top: 0;}
 
 .feedback {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   min-height: 100vh;
   color: #292b2c;
 }
@@ -317,7 +366,7 @@ small {font-size: .5em; padding-top: 0;}
 
 .gamerslist {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   padding: 10rem 0 0 0 ;
   color: #292b2c;
@@ -326,7 +375,7 @@ small {font-size: .5em; padding-top: 0;}
 
 .gamersdetails {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1rem;
   min-height: 100vh;
   padding: 0rem;
@@ -342,7 +391,7 @@ small {font-size: .5em; padding-top: 0;}
   background-size: cover;
   position: relative;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #fff;
 }
 
