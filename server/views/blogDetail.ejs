@@ -1,0 +1,129 @@
+<%# Import the header%>
+<%- include('templates/header'); -%>
+<%# /Import the header%>
+
+<section class="blog-details" id="blogdetails">
+  <div class="container">
+<%# Gamers Detail %>
+
+      <h1><%= blogDetail.title %></h1><hr />
+            <div class="row">
+              <div class="col-sm-9 my-3">
+                <h2>Summary</h2><hr />
+                <p><%- blogDetail.summary %></p>
+                <h3>blog</h3><hr />
+                <p><%- blogDetail.description %></p>
+                <small>
+                  <button class="btn btn-light"><i class="fas fa-user"></i> <a href="/gamers/<%= blogDetail.name %>#details"><%= blogDetail.name %></a></button>
+                  <button class="btn btn-light"><i class="fas fa-folder-open"></i> <a href="/blog#blogs">blogs</a></button>
+                  <button class="btn btn-light"><i class="fas fa-gamepad"></i> <%- blogDetail.genre %></button>
+                </small>
+
+
+                </div>
+
+              <div class="col-sm-3 my-3">
+                <a href="./<%= blogDetail.name %>">
+                  <img class="img-fluid w-100" src="<%= blogDetail.image %>" alt="Photo of <%= blogDetail.title %>">
+                  </a>
+                  <table class="table table-striped w-100">
+                    <thead >
+                      <div style="text-align: center;"><span class="stars-container stars-<%- blogDetail.rating %>">★★★★★</span></div>                  
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Developer:</th>
+                        <td><strong><%= blogDetail.developer %></strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Publisher:</th>
+                        <td><strong><%- blogDetail.publisher %></strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Genre:</th>
+                        <td><strong><%- blogDetail.genre %></strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Date:</th>
+                        <td><strong><%- blogDetail.releasedate %></strong></td>
+                      </tr>
+                      </tbody>
+                  </table>
+                  
+              </div>
+            </div>
+            <div class="clearfix"></div><hr />
+
+            <div class="pixgrid clearfix ">
+            <div class="row ">
+              <div class="col-sm-4 my-3">
+                <h2>Screenshots</h2><hr />
+                <div class="row">
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= blogDetail.shortname %>/<%= blogDetail.shortname %>_01_tn.jpg" alt="<%= blogDetail.shortname %>" />
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= blogDetail.shortname %>/<%= blogDetail.shortname %>_02_tn.jpg" alt="<%= blogDetail.shortname %>" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= blogDetail.shortname %>/<%= blogDetail.shortname %>_03_tn.jpg" alt="<%= blogDetail.shortname %>" />
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= blogDetail.shortname %>/<%= blogDetail.shortname %>_04_tn.jpg" alt="<%= blogDetail.shortname %>" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= blogDetail.shortname %>/<%= blogDetail.shortname %>_05_tn.jpg" alt="<%= blogDetail.shortname %>" />
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= blogDetail.shortname %>/<%= blogDetail.shortname %>_06_tn.jpg" alt="<%= blogDetail.shortname %>" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 my-3">
+                <h2>Author</h2><hr />
+                <div class="blog-quote">
+      
+                      <div class="row px-5 ">
+          
+                        <div class="col-sm-12 my-4 h-100  text-center">
+                          <a href="/gamers/<%= blogDetail.name %>#gamerdetails">
+                            <img class="w-100 " src="/images/gamers/<%= blogDetail.name %>.jpg" alt="Photo of <%= blogDetail.name %>">
+                          </a><br />
+                          <h3 class="text-center my-4"><a href="/gamers/<%= blogDetail.name %>#gamerdetails"><%= blogDetail.name %></a></h3>
+                          <p>
+                          <a href="/gamers/<%= blogDetail.name %>#gamerdetails"><button class="btn btn-light">View Profile</button></a></p>
+                        </div>
+          
+                      </div>
+                    </div>
+              </div>
+
+              <div class="col-sm-4 my-3">
+                <h2>Other</h2><hr />
+                <div class="row px-5">
+                  <div class="col-sm-12 my-3">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="clearfix"></div><hr />
+
+
+
+</section>
+
+<%# /Gamers Detail %>
+
+
+
+
+<%# Import the footer %>
+<%- include('templates/footer'); -%>
+<%# /Import the footer %>

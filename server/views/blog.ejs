@@ -1,0 +1,93 @@
+<%#Import the header%>
+<%- include('templates/header'); -%>
+<%#/Import the header%>
+
+
+
+<section class="featured-blog" id="featured">
+
+  <div class="row">
+    <div class="col-lg-6">
+<img src="../images/misc/bg-featured-blog.jpg" class="w-100 h-100" />
+    </div>
+
+    <div class="col-lg-6 px-5">
+      <h1>Featured blog</h1><hr />
+      <%# Gamers List Loop %>
+      <% bloglist.slice(-1).forEach(function(blog) { %>
+    <div class="row">
+
+      <div class="col-sm-4 my-3">
+        <a href="/blog/<%= blog.shortname %>#blogdetails">
+          <img class="w-100" src="<%= blog.image %>" alt="Photo of <%= blog.shortname %>">
+        </a>
+      </div>
+      <div class="col-sm-8 my-3">
+        <h2 class="feaured"><%= blog.title %></h2>
+        <span class="stars-container stars-<%- blog.rating %>">★★★★★</span> 
+        <div class="meta-data mb-3">
+          <a class="btn btn-light btn-sm text-uppercase text-dark" href="/gamers/<%= blog.name %>#gamerdetails"><%= blog.name %></a>
+          <a class="btn btn-light btn-sm text-uppercase text-dark">blogs</a>
+          <a class="btn btn-light btn-sm text-uppercase text-dark"><strong><%= blog.releasedate %></strong></a>
+        </div>
+
+        <p><%- blog.summary %></p>
+
+          <a href="/blog/<%= blog.shortname %>#blogdetails"><button class="btn btn-light btn-lg">Read More</button></a>
+        
+      </div>
+
+    </div><hr />
+      <%  }); %>
+      <%# / Gamers List Loop %>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="clearfix"></div>
+
+
+
+
+<section class="blogs" id="blogs">
+  <div class="container">
+    <h1>All blogs</h1><hr />
+
+
+              <%# Gamers List Loop %>
+              <% bloglist.reverse().splice(1).forEach(function(blog) { %>
+            <div class="row" >
+
+              <div class="col-sm-3 my-3">
+                <a href="/blog/<%= blog.shortname %>#blogdetails">
+                  <img class="w-100" src="<%= blog.image %>" alt="Photo of <%= blog.shortname %>">
+                </a>
+              </div>
+              <div class="col-sm-9 my-3">
+                <h2><%= blog.title %></h2>
+                <span class="stars-container stars-<%- blog.rating %>">★★★★★</span> 
+                <div class="meta-data mb-3">
+                  <a class="btn btn-light btn-sm text-uppercase" href="/gamers/<%= blog.name %>#gamerdetails"><%= blog.name %></a>
+                  <a class="btn btn-light btn-sm text-uppercase">blogs</a>
+                  <a class="btn btn-light btn-sm text-uppercase"><%= blog.releasedate %></a>
+                </div>
+
+                <p><%- blog.summary %></p>
+
+                  <a href="/blog/<%= blog.shortname %>#blogdetails"><button class="btn btn-light btn-lg">Read More</button></a>
+                
+              </div>
+
+            </div><hr />
+              <%  }); %>
+              <%# / Gamers List Loop %>
+
+  </div>
+</section>
+
+
+
+<%#Import the footer%>
+<%- include('templates/footer'); -%>
+<%#/Import the footer%>

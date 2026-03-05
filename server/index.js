@@ -11,7 +11,7 @@ const configs = require('./config'); //Loads the config data
 const AboutService = require('./services/AboutService');  //Loads the gamer services module
 const GamerService = require('./services/GamerService');  //Loads the gamer services module
 const FeedbackService = require('./services/FeedbackService');  //Loads the feedback services module
-const ReviewService = require('./services/ReviewService'); //Loads the review services module
+const BlogService = require('./services/BlogService'); //Loads the blog services module
 const GotyService = require('./services/GotyService'); //Loads the goty services module
 const GalleryService = require('./services/GalleryService'); //Loads the gallery services module
 const PersonaliseService = require('./services/PersonaliseService'); //Loads the personalise services module
@@ -23,7 +23,7 @@ const config = configs[app.get('env')]; //Loads the config for production or dev
 
 const aboutService = new AboutService(config.data.about); //Creates a new services and passes in the url for the data from the config
 const gamerService = new GamerService(config.data.gamers); //Creates a new services and passes in the url for the data from the config
-const reviewService = new ReviewService(config.data.review); //Creates a new services and passes in the url for the data from the config
+const blogService = new BlogService(config.data.blog); //Creates a new services and passes in the url for the data from the config
 const feedbackService = new FeedbackService(config.data.feedback); //Creates a new services and passes in the url for the data from the config
 const gotyService = new GotyService(config.data.goty); //Creates a new services and passes in the url for the data from the config
 const galleryService = new GalleryService(config.data.gallery); //Creates a new services and passes in the url for the data from the config
@@ -59,7 +59,7 @@ app.use('/', routes({
     aboutService: aboutService,
     gamerService: gamerService,
     feedbackService: feedbackService,
-    reviewService: reviewService,
+    blogService: blogService,
     gotyService: gotyService,
     personaliseService: personaliseService,
     galleryService: galleryService

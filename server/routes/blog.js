@@ -4,13 +4,13 @@ const router = express.Router();
 module.exports = (param) => {
 
     const { gamerService } = param; 
-    const { reviewService } = param;
+    const { blogService } = param;
 
     router.get('/', async(req, res, next) => {
         const gamerslist = await gamerService.getList();
-        const reviewlist = await reviewService.getList();
+        const bloglist = await blogService.getList();
         const allBoxart = await gamerService.getAllBoxart();
-        return res.render('review', {page: 'Reviews', gamerslist, reviewlist, boxart: allBoxart});
+        return res.render('blog', {page: 'Blogs', gamerslist, bloglist, boxart: allBoxart});
 
     });
 
@@ -18,16 +18,16 @@ module.exports = (param) => {
 
         try {
             const promises = []; 
-            promises.push(reviewService.getReviewDetail(req.params.name)); 
+            promises.push(blogService.getBlogDetail(req.params.name)); 
             const result = await Promise.all(promises) 
             console.log(result[0])
             if(!result[0]){
                 return next();
             }
 
-            return res.render('reviewDetail', {
+            return res.render('blogDetail', {
                 page: req.params.name, 
-                reviewDetail: result[0],
+                blogDetail: result[0],
                 boxart: result[1],
             });
         }catch (err){
