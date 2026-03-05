@@ -1,0 +1,84 @@
+{
+  "gallerys": [
+    {
+    "title" : "Fallout 4",
+    "name": "Arthur_Morgan",
+    "shortname" : "fallout-4",
+    "screenshot" : ["fallout-4_01" , "fallout-4_02" , "fallout-4_03" , "fallout-4_04" , "fallout-4_05" , "fallout-4_06"]
+  },{
+    "title" : "Transformers: Fall of Cybertron",
+    "name": "Clayton_Carmine",
+    "shortname" : "transformers-foc",
+    "screenshot" : ["transformers-foc_01" , "transformers-foc_02" , "transformers-foc_03" , "transformers-foc_04" , "transformers-foc_05" , "transformers-foc_06"]
+  },{
+    "title" : "LA Noire",
+    "name": "Clayton_Carmine",
+    "shortname" : "la-noire",
+    "screenshot" : ["la-noire_01","la-noire_02","la-noire_03","la-noire_04","la-noire_05","la-noire_06"]
+  },{
+    "title" : "Burnout Paradise Remastered",
+    "name": "Arthur_Morgan",
+    "shortname" : "burnout-paradise-remastered",
+    "screenshot" : ["burnout-paradise-remastered_01" , "burnout-paradise-remastered_02" , "burnout-paradise-remastered_03" , "burnout-paradise-remastered_04" , "burnout-paradise-remastered_05" , "burnout-paradise-remastered_06"]
+  },{
+    "title" : "God of War",
+    "name": "Connor_Arkay",
+    "shortname" : "god-of-war",
+    "screenshot" : ["god-of-war_01" , "god-of-war_02" , "god-of-war_03" , "god-of-war_04" , "god-of-war_05" , "god-of-war_06"]
+  },{
+    "title" : "Detroit Become Human",
+    "name": "Connor_Arkay",
+    "shortname" : "detroit-become-human",
+    "screenshot" : ["detroit-become-human_01","detroit-become-human_02","detroit-become-human_03","detroit-become-human_04","detroit-become-human_05","detroit-become-human_06"]
+  },{
+    "title" : "Assassin's Creed Odyssey",
+    "name": "John_Shepard",
+    "shortname" : "assassins-creed-odyssey",
+    "screenshot" : ["assassins-creed-odyssey_01" , "assassins-creed-odyssey_02" , "assassins-creed-odyssey_03" , "assassins-creed-odyssey_04" , "assassins-creed-odyssey_05" , "assassins-creed-odyssey_06"]
+  },{
+    "title" : "Kingdom Hearts 3",
+    "name": "John_Shepard",
+    "shortname" : "kingdom-hearts-3",
+    "screenshot" : ["kingdom-hearts-3_01","kingdom-hearts-3_02","kingdom-hearts-3_03","kingdom-hearts-3_04","kingdom-hearts-3_05","kingdom-hearts-3_06"]
+  },{
+    "title" : "Days Gone",
+    "name": "Connor_Arkay",
+    "shortname" : "days-gone",
+    "screenshot" : ["days-gone_01" , "days-gone_02" , "days-gone_03" , "days-gone_04" , "days-gone_05" , "days-gone_06"]
+  },{
+    "title" : "Final Fantasy X Remastered",
+    "name": "John_Shepard",
+    "shortname" : "final-fantasy-x-remastered",
+    "screenshot" : ["final-fantasy-x-remastered_01" , "final-fantasy-x-remastered_02" , "final-fantasy-x-remastered_03" , "final-fantasy-x-remastered_04" , "final-fantasy-x-remastered_05" , "final-fantasy-x-remastered_06"]
+  },{
+    "title" : "Creature In The Well",
+    "name": "Clayton_Carmine",
+    "shortname" : "creature-in-the-well",
+    "screenshot" : ["creature-in-the-well_01","creature-in-the-well_02","creature-in-the-well_03","creature-in-the-well_04","creature-in-the-well_05","creature-in-the-well_06"]
+  },{
+    "title" : "Greedfall",
+    "name": "Clayton_Carmine",
+    "shortname" : "greedfall",
+    "screenshot" : ["greedfall_01","greedfall_02","greedfall_03","greedfall_04","greedfall_05","greedfall_06"]
+  },{
+    "title" : "Indivisible",
+    "name": "John_Shepard",
+    "shortname" : "indivisible",
+    "screenshot" : ["indivisible_01","indivisible_02","indivisible_03","indivisible_04","indivisible_05","indivisible_06"]
+  },{
+    "title" : "The Outer Worlds",
+    "name": "Arthur_Morgan",
+    "shortname" : "the-outer-worlds",
+    "screenshot" : ["the-outer-worlds_01" , "the-outer-worlds_02" , "the-outer-worlds_03" , "the-outer-worlds_04" , "the-outer-worlds_05" , "the-outer-worlds_06"]
+  },{
+    "title" : "Star Wars Jedi: Fallen Order",
+    "name": "Connor_Arkay",
+    "shortname" : "star-wars-jedi-fallen-order",
+    "screenshot" : ["star-wars-jedi-fallen-order_01","star-wars-jedi-fallen-order_02","star-wars-jedi-fallen-order_03","star-wars-jedi-fallen-order_04","star-wars-jedi-fallen-order_05","star-wars-jedi-fallen-order_06"]
+  },{
+    "title" : "Ori and the Will of the Wisps",
+    "name": "Arthur_Morgan",
+    "shortname" : "ori-and-the-will-of-the-wisps",
+    "screenshot" : ["ori-and-the-will-of-the-wisps_01","ori-and-the-will-of-the-wisps_02","ori-and-the-will-of-the-wisps_03","ori-and-the-will-of-the-wisps_04","ori-and-the-will-of-the-wisps_05","ori-and-the-will-of-the-wisps_06"]
+  }]
+}

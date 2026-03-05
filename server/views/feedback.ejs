@@ -1,0 +1,73 @@
+<%# Import the header %>
+<%- include('templates/header'); -%>
+<%# /Import the header %>
+<style>header {display:none}</style>
+<section class="feedback" id="feedback">
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 >Send us feedback</h1><hr />
+        <%# Feedback Form %>
+          <form class="feedback-form" action="/feedback" method="POST">
+            <div class="form-group">
+              <label for="feedback-form-name">Name</label>
+              <input class="form-control" id="feedback-form-name" type="text" placeholder="Enter your name" name="fbName">
+            </div>
+            <div class="form-group">
+              <label for="feedback-form-title">Title</label>
+              <input class="form-control" id="feedback-form-title" type="text" placeholder="Title of your feedback" name="fbTitle">
+            </div>
+            <div class="form-group">
+              <label for="feedback-form-message">Message</label>
+              <textarea class="form-control" id="feedback-form-message" type="text" placeholder="Enter your message, then hit the submit" rows="6" name="fbMessage"></textarea>
+            </div>
+            <button class="btn btn-dark" type="submit">Submit</button>
+            <button class="btn btn-danger" type="submit">Clear</button>
+            <button class="btn btn-light"><a href="/feedback#subfeedback">Read Feedback</a></button>
+
+          </form>
+        <%# /Feedback Form %>
+      </div>
+      <%# primary %>
+    </div>
+  </div>
+</section>
+
+<section class="feedback" id="subfeedback">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12">
+
+        <h1 class="article-title">Recent Feedback</h1><hr />
+
+        <%# Feedback List Loop %>
+        <% feedbacklist.forEach(function(item) { %> 
+
+          <table class="table table-striped w-100 text-center">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><%= item.name %></th>
+                <td><%= item.title %></td>
+                <td><%= item.message %></td>
+              </tr>
+            </tbody>
+          </table>
+            <%  }); %>
+          <%# Feedback List Loop %>
+          </div>
+        </div>
+      <%# secondary %>
+    </div>
+  <%# container %>
+</section>
+<%# Import the footer %>
+<%- include('templates/footer'); -%>
+<%# /Import the footer %>

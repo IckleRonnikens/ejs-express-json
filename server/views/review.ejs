@@ -1,0 +1,95 @@
+<%#Import the header%>
+<%- include('templates/header'); -%>
+<%#/Import the header%>
+<style>header {display:none}</style>
+
+
+
+
+<section class="featured-review" id="featured">
+
+  <div class="row">
+    <div class="col-lg-6">
+<img src="../images/misc/bg-featured-review.jpg" class="w-100 h-100" />
+    </div>
+
+    <div class="col-lg-6 px-5">
+      <h1>Featured Review</h1><hr />
+      <%# Gamers List Loop %>
+      <% reviewlist.slice(-1).forEach(function(review) { %>
+    <div class="row">
+
+      <div class="col-sm-4 my-3">
+        <a href="/review/<%= review.shortname %>#reviewdetails">
+          <img class="w-100" src="<%= review.image %>" alt="Photo of <%= review.shortname %>">
+        </a>
+      </div>
+      <div class="col-sm-8 my-3">
+        <h2 class="feaured"><%= review.title %></h2>
+        <span class="stars-container stars-<%- review.rating %>">★★★★★</span> 
+        <div class="meta-data mb-3">
+          <a class="btn btn-light btn-sm text-uppercase text-dark" href="/gamers/<%= review.name %>#gamerdetails"><%= review.name %></a>
+          <a class="btn btn-light btn-sm text-uppercase text-dark">Reviews</a>
+          <a class="btn btn-light btn-sm text-uppercase text-dark"><strong><%= review.releasedate %></strong></a>
+        </div>
+
+        <p><%- review.summary %></p>
+
+          <a href="/review/<%= review.shortname %>#reviewdetails"><button class="btn btn-light btn-lg">Read More</button></a>
+        
+      </div>
+
+    </div><hr />
+      <%  }); %>
+      <%# / Gamers List Loop %>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="clearfix"></div>
+
+
+
+
+<section class="reviews" id="reviews">
+  <div class="container">
+    <h1>All Reviews</h1><hr />
+
+
+              <%# Gamers List Loop %>
+              <% reviewlist.reverse().splice(1).forEach(function(review) { %>
+            <div class="row" >
+
+              <div class="col-sm-3 my-3">
+                <a href="/review/<%= review.shortname %>#reviewdetails">
+                  <img class="w-100" src="<%= review.image %>" alt="Photo of <%= review.shortname %>">
+                </a>
+              </div>
+              <div class="col-sm-9 my-3">
+                <h2><%= review.title %></h2>
+                <span class="stars-container stars-<%- review.rating %>">★★★★★</span> 
+                <div class="meta-data mb-3">
+                  <a class="btn btn-light btn-sm text-uppercase" href="/gamers/<%= review.name %>#gamerdetails"><%= review.name %></a>
+                  <a class="btn btn-light btn-sm text-uppercase">Reviews</a>
+                  <a class="btn btn-light btn-sm text-uppercase"><%= review.releasedate %></a>
+                </div>
+
+                <p><%- review.summary %></p>
+
+                  <a href="/review/<%= review.shortname %>#reviewdetails"><button class="btn btn-light btn-lg">Read More</button></a>
+                
+              </div>
+
+            </div><hr />
+              <%  }); %>
+              <%# / Gamers List Loop %>
+
+  </div>
+</section>
+
+
+
+<%#Import the footer%>
+<%- include('templates/footer'); -%>
+<%#/Import the footer%>

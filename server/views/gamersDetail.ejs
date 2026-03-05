@@ -1,0 +1,54 @@
+<%# Import the header%>
+<%- include('templates/header'); -%>
+<%# /Import the header%>
+<style>header {display:none}</style>
+<section class="gamersdetails" id="gamerdetails">
+  <div class="container" >
+      <%# Gamers Details %>
+      <h1 ><%= gamer.title %></h1><h5 class="text-center"><a href="./<%= gamer.shortname %>#gamerdetails"><%= gamer.name %></a>
+      </h5><hr />
+
+            <div class="row">
+              <div class="col-sm-3 my-3">
+                <a href="./<%= gamer.shortname %>#gamerdetails">
+                  <img class="w-100 mb-1 " src="/images/gamers/<%= gamer.shortname %>.jpg" alt="Photo of <%= gamer.title %>">
+                  </a>
+                <img alt="No Gamer Card Available" class="w-100 mt-5 " src="https://www.trueachievements.com/gamercards/<%= gamer.gamertag %>.png"/>
+
+              </div>
+
+              <div class="col-sm-6 my-3">
+                <p><%- gamer.summary %></p>
+                <p><%- gamer.description %></p><br />      
+
+              </div>
+          
+              <div class="col-sm-3 my-3">
+                <h3>Recent Reviews</h3><hr />
+                <div class="row">
+                <%# Boxart %>
+                <% if (boxart.reverse().length > 0) { %>
+                  <%for (i=0; i < boxart.length; i ++){ %>
+                      <div class="col-6">
+                        <div class="pixgrid clearfix zoom">
+                          <a href="/review/<%= boxart[i] %>#reviewdetails"><img class="w-100" src="/images/boxart/<%= boxart[i] %>_tn.jpg"></a>
+                          </div>
+                      </div>
+  
+                  <%}%>
+                <% }  %>
+              <%# /Boxart %>
+            </div>
+              </div>
+        
+        </div>
+          </section>
+
+
+      <%# /Gamers Details %>
+
+
+        
+<%# Import the footer %>
+<%- include('templates/footer'); -%>
+<%# /Import the footer %>

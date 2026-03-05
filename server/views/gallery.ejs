@@ -1,0 +1,25 @@
+<%#Import the header%>
+<%- include('templates/header'); -%>
+<%#/Import the header%>
+<style>header {display:none}</style>
+<section class="gallery" id="gallery">
+  <div class="container">
+    <h1>Gallery</h1><hr />
+
+      <div class="row"> 
+        <%# Gallery List Loop %>
+          <% galleryslist.reverse().forEach(function(item) { %>
+            <div class="col-sm-2 mb-4 ">
+              <a href="/gallery/<%= item.shortname %>">
+                    <img class="w-100" src="/images/boxart/<%= item.shortname %>.jpg" alt="Photo of <%= item.shortname %>">
+                </a>
+              </div>
+              <%  }); %>
+              <%# / Gallery List Loop %>
+            </div>
+    </div>
+  </section>
+
+<%#Import the footer%>
+<%- include('templates/footer'); -%>
+<%#/Import the footer%>

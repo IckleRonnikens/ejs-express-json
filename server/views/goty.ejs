@@ -1,0 +1,87 @@
+<%#Import the header%>
+<%- include('templates/header'); -%>
+<%#/Import the header%>
+<style>header {display:none}</style>
+<section class="featured-goty" id="featured">
+
+  <div class="row">
+    <div class="col-lg-6">
+<img src="../images/misc/bg-featured-goty.jpg" class="w-100 h-100" />
+    </div>
+
+    <div class="col-lg-6 px-5">
+      <h1>Featured Game of the Year</h1><hr />
+      <%# Gamers List Loop %>
+      <% gotylist.slice(-1).forEach(function(goty) { %>
+    <div class="row">
+
+      <div class="col-sm-4 my-3">
+        <a href="/goty/<%= goty.shortname %>#gotydetails">
+          <img class="w-100" src="<%= goty.image %>" alt="Photo of <%= goty.shortname %>">
+        </a>
+      </div>
+      <div class="col-sm-8 my-3">
+        <h2><%= goty.title %></h2>
+        <div class="meta-data mb-3">
+          <a class="btn btn-light btn-sm text-uppercase text-dark" href="/gamers/<%= goty.name %>#gamerdetails"><%= goty.shortname %></a>
+          <a class="btn btn-light btn-sm text-uppercase text-dark">gotys</a>
+          <a class="btn btn-light btn-sm text-uppercase text-dark"><%= goty.releasedate %></a>
+        </div>
+
+        <p><%- goty.summary %></p>
+
+          <a href="/goty/<%= goty.shortname %>#gotydetails"><button class="btn btn-light btn-lg">Read More</button></a>
+        
+      </div>
+
+    </div><hr />
+      <%  }); %>
+      <%# / Gamers List Loop %>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="clearfix"></div>
+
+
+<section class="goty" id="goty">
+  <div class="container">
+    <h1>Previous Game of the Year Winners</h1><hr />
+
+              <%# Gamers List Loop %>
+              <% gotylist.reverse().splice(1).forEach(function(goty) { %>
+            <div class="row">
+
+              <div class="col-sm-3 my-3">
+                <a href="/goty/<%= goty.shortname %>#gotydetails">
+                  <img class="w-100" src="<%= goty.image %>" alt="Photo of <%= goty.shortname %>">
+                </a>
+              </div>
+              <div class="col-sm-9 my-3">
+                <h3><a href="/goty/<%= goty.shortname %>#gotydetails"></a><%= goty.shortname %> - <%= goty.title %></a></h3>
+                <div class="meta-data mb-3">
+                  <a class="btn btn-light btn-sm text-lowercase" href="/gamers/<%= goty.shortname %>#gamerdetails"><%= goty.title %></a>
+                  <a class="btn btn-light btn-sm text-lowercase">GOTY</a>
+                  <a class="btn btn-light btn-sm text-lowercase"><strong><%= goty.shortname %></strong></a>
+                </div>
+
+                <p><%- goty.summary %></p>
+
+                  <a href="/goty/<%= goty.shortname %>#gotydetails"><button class="btn btn-light btn-lg">Read More</button></a>
+                
+              </div>
+
+            </div><hr />
+
+              <%  }); %>
+              <%# / Gamers List Loop %>
+
+  </div>
+</section>
+
+
+
+<%#Import the footer%>
+<%- include('templates/footer'); -%>
+<%#/Import the footer%>

@@ -1,0 +1,25 @@
+{
+  "name": "harryandhermione",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^3.0.1",
+    "express": "^4.16.4",
+    "http-errors": "^1.7.1"
+  },
+  "engines": {
+    "node": "v11.3.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}

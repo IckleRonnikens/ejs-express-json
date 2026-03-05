@@ -1,0 +1,129 @@
+<%# Import the header%>
+<%- include('templates/header'); -%>
+<%# /Import the header%>
+<style>header {display:none}</style>
+<section class="review-details" id="reviewdetails">
+  <div class="container">
+<%# Gamers Detail %>
+
+      <h1><%= reviewDetail.title %></h1><hr />
+            <div class="row">
+              <div class="col-sm-9 my-3">
+                <h2>Summary</h2><hr />
+                <p><%- reviewDetail.summary %></p>
+                <h3>Review</h3><hr />
+                <p><%- reviewDetail.description %></p>
+                <small>
+                  <button class="btn btn-light"><i class="fas fa-user"></i> <a href="/gamers/<%= reviewDetail.name %>#details"><%= reviewDetail.name %></a></button>
+                  <button class="btn btn-light"><i class="fas fa-folder-open"></i> <a href="/review#reviews">Reviews</a></button>
+                  <button class="btn btn-light"><i class="fas fa-gamepad"></i> <%- reviewDetail.genre %></button>
+                </small>
+
+
+                </div>
+
+              <div class="col-sm-3 my-3">
+                <a href="./<%= reviewDetail.name %>">
+                  <img class="img-fluid w-100" src="<%= reviewDetail.image %>" alt="Photo of <%= reviewDetail.title %>">
+                  </a>
+                  <table class="table table-striped w-100">
+                    <thead >
+                      <div style="text-align: center;"><span class="stars-container stars-<%- reviewDetail.rating %>">★★★★★</span></div>                  
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Developer:</th>
+                        <td><strong><%= reviewDetail.developer %></strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Publisher:</th>
+                        <td><strong><%- reviewDetail.publisher %></strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Genre:</th>
+                        <td><strong><%- reviewDetail.genre %></strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Date:</th>
+                        <td><strong><%- reviewDetail.releasedate %></strong></td>
+                      </tr>
+                      </tbody>
+                  </table>
+                  
+              </div>
+            </div>
+            <div class="clearfix"></div><hr />
+
+            <div class="pixgrid clearfix ">
+            <div class="row ">
+              <div class="col-sm-4 my-3">
+                <h2>Screenshots</h2><hr />
+                <div class="row">
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= reviewDetail.shortname %>/<%= reviewDetail.shortname %>_01_tn.jpg" alt="<%= reviewDetail.shortname %>" />
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= reviewDetail.shortname %>/<%= reviewDetail.shortname %>_02_tn.jpg" alt="<%= reviewDetail.shortname %>" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= reviewDetail.shortname %>/<%= reviewDetail.shortname %>_03_tn.jpg" alt="<%= reviewDetail.shortname %>" />
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= reviewDetail.shortname %>/<%= reviewDetail.shortname %>_04_tn.jpg" alt="<%= reviewDetail.shortname %>" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= reviewDetail.shortname %>/<%= reviewDetail.shortname %>_05_tn.jpg" alt="<%= reviewDetail.shortname %>" />
+                  </div>
+                  <div class="col-6">
+                    <img class="w-100 my-3" src="/images/gallery/<%= reviewDetail.shortname %>/<%= reviewDetail.shortname %>_06_tn.jpg" alt="<%= reviewDetail.shortname %>" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 my-3">
+                <h2>Author</h2><hr />
+                <div class="review-quote">
+      
+                      <div class="row px-5 ">
+          
+                        <div class="col-sm-12 my-4 h-100  text-center">
+                          <a href="/gamers/<%= reviewDetail.name %>#gamerdetails">
+                            <img class="w-100 " src="/images/gamers/<%= reviewDetail.name %>.jpg" alt="Photo of <%= reviewDetail.name %>">
+                          </a><br />
+                          <h3 class="text-center my-4"><a href="/gamers/<%= reviewDetail.name %>#gamerdetails"><%= reviewDetail.name %></a></h3>
+                          <p>
+                          <a href="/gamers/<%= reviewDetail.name %>#gamerdetails"><button class="btn btn-light">View Profile</button></a></p>
+                        </div>
+          
+                      </div>
+                    </div>
+              </div>
+
+              <div class="col-sm-4 my-3">
+                <h2>Other</h2><hr />
+                <div class="row px-5">
+                  <div class="col-sm-12 my-3">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="clearfix"></div><hr />
+
+
+
+</section>
+
+<%# /Gamers Detail %>
+
+
+
+
+<%# Import the footer %>
+<%- include('templates/footer'); -%>
+<%# /Import the footer %>

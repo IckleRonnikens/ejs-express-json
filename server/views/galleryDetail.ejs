@@ -1,0 +1,31 @@
+<%# Import the header%>
+<%- include('templates/header'); -%>
+<%# /Import the header%>
+<style>header {display:none}</style>
+<section class="gallerydetail" id="gallerydetail">
+  <div class="container">
+
+    <%# Gallerys Details %>
+      <h1><%= gallery.title %></h1><hr />
+      <div class="pixgrid clearfix ">
+
+        <div class="row">
+          <%# Screenshot %>
+            <% if (screenshot.length > 0) { %>
+              <%for (i=0; i < screenshot.length; i ++){ %>
+                <div class="col-2">
+                    <img class="w-100 " src="/images/gallery/<%= gallery.shortname %>/<%= screenshot[i] %>_tn.jpg">
+                </div>
+              <%}%>
+            <% }  %>
+          <%# /Screenshot %>
+        </div>
+      </div>
+
+    <%# /Gallerys Details %>
+  </div>
+</section>
+
+<%# Import the footer %>
+<%- include('templates/footer'); -%>
+<%# /Import the footer %>

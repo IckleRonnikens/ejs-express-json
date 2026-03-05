@@ -1,0 +1,21 @@
+  <div class="container">
+<h3>Recent Reviews</h3><hr />
+
+
+<div class="row">
+
+  <%# Boxart %>
+              <% if (boxart.length > 0) { %>
+                <%for (i=0; i < boxart.length; i ++){ %>
+                    <div class="col-6">
+                      <div class="pixgrid clearfix zoom">
+                        <img class="w-100" src="/images/boxart/<%= boxart[i] %>">
+                        </div>
+                    </div>
+
+                <%}%>
+              <% }  %>
+            <%# /Boxart %>
+          </div>
+        </div>
+
