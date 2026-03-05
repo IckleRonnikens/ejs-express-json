@@ -1,8 +1,9 @@
 const path = require('path');
 module.exports = {
     development: {
-        sitename: 'Numb Thumbz [Development]',
+        sitename: 'Harry and Hermione [Development]',
         data: {
+            about: path.join(__dirname, 'data/about.json'),
             gamers: path.join(__dirname, 'data/gamers.json'),
             feedback: path.join(__dirname, 'data/feedback.json'),
             review: path.join(__dirname, 'data/review.json'),
@@ -13,8 +14,9 @@ module.exports = {
 
     },
     production: {
-        sitename: 'Numb Thumbz',
+        sitename: 'Harry and Hermione',
         data: {
+            about: path.join(__dirname, 'data/about.json'),
             gamers: path.join(__dirname, 'data/gamers.json'),
             feedback: path.join(__dirname, 'data/feedback.json'),
             review: path.join(__dirname, 'data/review.json'),

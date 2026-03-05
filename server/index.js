@@ -8,6 +8,7 @@ const routes = require('./routes/routes');
 const configs = require('./config'); //Loads the config data
 
 
+const AboutService = require('./services/AboutService');  //Loads the gamer services module
 const GamerService = require('./services/GamerService');  //Loads the gamer services module
 const FeedbackService = require('./services/FeedbackService');  //Loads the feedback services module
 const ReviewService = require('./services/ReviewService'); //Loads the review services module
@@ -20,8 +21,9 @@ const app = express();
 const config = configs[app.get('env')]; //Loads the config for production or development depending on the env
 
 
-const reviewService = new ReviewService(config.data.review); //Creates a new services and passes in the url for the data from the config
+const aboutService = new AboutService(config.data.about); //Creates a new services and passes in the url for the data from the config
 const gamerService = new GamerService(config.data.gamers); //Creates a new services and passes in the url for the data from the config
+const reviewService = new ReviewService(config.data.review); //Creates a new services and passes in the url for the data from the config
 const feedbackService = new FeedbackService(config.data.feedback); //Creates a new services and passes in the url for the data from the config
 const gotyService = new GotyService(config.data.goty); //Creates a new services and passes in the url for the data from the config
 const galleryService = new GalleryService(config.data.gallery); //Creates a new services and passes in the url for the data from the config
@@ -54,6 +56,7 @@ app.use(async (req, res, next) => {
 
 //Passes the services as a param to the routes
 app.use('/', routes({
+    aboutService: aboutService,
     gamerService: gamerService,
     feedbackService: feedbackService,
     reviewService: reviewService,

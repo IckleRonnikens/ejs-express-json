@@ -1,5 +1,6 @@
 
 const express = require('express'); 
+const aboutRoutes = require('./about'); 
 const gamersRoutes = require('./gamers'); 
 const feedbackRoutes = require('./feedback');
 const reviewRoutes = require('./review');
@@ -25,6 +26,7 @@ module.exports = (param) => {
         
     });
 
+    router.use('/about', aboutRoutes(param));
     router.use('/gamers', gamersRoutes(param));
     router.use('/feedback', feedbackRoutes(param));
     router.use('/review', reviewRoutes(param));
