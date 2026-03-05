@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  font-family: "Oswald", sans-serif;
   padding-bottom: 6rem;
   background-color: #ffffff;
   min-height: 100%;
@@ -45,7 +46,6 @@ footer {
 .fill-viewport-height {min-height: 95vh;}
 
 h1, h2, h3, h4, h5 {
-    font-family: "Oswald", sans-serif;
     font-weight: 400;
     color: #000;
     margin: 0;
@@ -53,7 +53,6 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-  font-family: inherit;
   font-weight: 100;
   font-size: 1.1rem;
   color: #292b2c;
@@ -70,7 +69,6 @@ img {
 }
 
 li {
-  font-family: inherit;
   font-weight: 100;
 }
 
@@ -91,7 +89,6 @@ small {font-size: .5em; padding-top: 0;}
 
 nav {
   background-color: #000;
-  font-family: "Oswald", sans-serif;
   font-size: 14pt;
   font-weight: 400;
 }
@@ -185,7 +182,6 @@ nav ul li a:hover {color: #fff!important;}
 
 .about {  
   background-color: #ffffff;
-  font-family: 'Oswald', sans-serif;
   line-height: 160%;
   min-height: 100vh;
   color: #292b2c;
@@ -195,7 +191,6 @@ nav ul li a:hover {color: #fff!important;}
 
 /* SIDEBAR  */
 .sidebar {
-  font-family: 'Oswald', sans-serif;
   line-height: 160%;
   min-height: 100vh;
   color: #292b2c;
@@ -212,7 +207,6 @@ nav ul li a:hover {color: #fff!important;}
   background-size: cover;
   position: relative;
   min-height: 100vh;
-  font-family: 'Oswald', sans-serif;
 }
 .gamers a:hover {color: #292b2c; font-weight: bold;}
 .gamers hr {background-color: #292b2c;}
@@ -224,7 +218,6 @@ nav ul li a:hover {color: #fff!important;}
   background-color: #292b2c;
   position: relative;
   min-height: 100vh;
-  font-family: 'Oswald', sans-serif;
   color: #ffffff;
 }
 .featured-review h1 {color: #ffffff;}
@@ -236,7 +229,6 @@ nav ul li a:hover {color: #fff!important;}
 .reviews {
   background-color: #ffffff;
   color: #292b2c;
-  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -244,7 +236,6 @@ nav ul li a:hover {color: #fff!important;}
 .review-details {
   background-color: #ffffff;
   color: #292b2c;
-  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -252,7 +243,6 @@ nav ul li a:hover {color: #fff!important;}
 .review-info {
   background-color: #fff;
   color: #292b2c;
-  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -270,7 +260,6 @@ nav ul li a:hover {color: #fff!important;}
   background-color: #292b2c;
   position: relative;
   min-height: 100vh;
-  font-family: 'Oswald', sans-serif;
   color: #ffffff;
 }
 .featured-goty h1, .featured-goty h2, .featured-goty p {color: #ffffff;}
@@ -280,7 +269,6 @@ nav ul li a:hover {color: #fff!important;}
 .goty {
   background-color: #ffffff;
   color: #292b2c;
-  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -288,7 +276,6 @@ nav ul li a:hover {color: #fff!important;}
 .goty-details {
   background-color: #ffffff;
   color: #292b2c;
-  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -296,7 +283,6 @@ nav ul li a:hover {color: #fff!important;}
 .goty-info {
   background-color: #fff;
   color: #292b2c;
-  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   min-height: 100vh;
 }
@@ -322,7 +308,6 @@ nav ul li a:hover {color: #fff!important;}
 
 .gallerydetails {
   background-color: #ffffff;
-  font-family: 'Oswald', sans-serif;
   font-size: 1rem;
   min-height: 100vh;
   padding: 0rem;
@@ -354,7 +339,6 @@ nav ul li a:hover {color: #fff!important;}
 
 .feedback {
   background-color: #ffffff;
-  font-family: 'Oswald', sans-serif;
   min-height: 100vh;
   color: #292b2c;
 }
@@ -366,7 +350,6 @@ nav ul li a:hover {color: #fff!important;}
 
 .gamerslist {
   background-color: #ffffff;
-  font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
   padding: 10rem 0 0 0 ;
   color: #292b2c;
@@ -375,7 +358,6 @@ nav ul li a:hover {color: #fff!important;}
 
 .gamersdetails {
   background-color: #ffffff;
-  font-family: 'Oswald', sans-serif;
   font-size: 1rem;
   min-height: 100vh;
   padding: 0rem;
@@ -391,7 +373,6 @@ nav ul li a:hover {color: #fff!important;}
   background-size: cover;
   position: relative;
   min-height: 100vh;
-  font-family: 'Oswald', sans-serif;
   color: #fff;
 }
 

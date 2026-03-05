@@ -6,6 +6,7 @@ const feedbackRoutes = require('./feedback');
 const blogRoutes = require('./blog');
 const gotyRoutes = require('./goty');
 const galleryRoutes = require('./gallery');
+const searchRoutes = require('./search');
 
 
 
@@ -32,6 +33,7 @@ module.exports = (param) => {
     router.use('/blog', blogRoutes(param));
     router.use('/goty', gotyRoutes(param));
     router.use('/gallery', galleryRoutes(param));
+    router.use('/search', searchRoutes(param));
 
 
 

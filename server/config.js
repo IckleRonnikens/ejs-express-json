@@ -9,7 +9,8 @@ module.exports = {
             feedback: path.join(__dirname, 'data/feedback.json'),
             goty: path.join(__dirname, 'data/goty.json'),
             users: path.join(__dirname, 'data/users.json'),
-            gallery: path.join(__dirname, 'data/gallery.json')
+            gallery: path.join(__dirname, 'data/gallery.json'),
+            search: path.join(__dirname, 'data/search.json')
         }
 
     },
@@ -22,7 +23,8 @@ module.exports = {
             feedback: path.join(__dirname, 'data/feedback.json'),
             goty: path.join(__dirname, 'data/goty.json'),
             users: path.join(__dirname, 'data/users.json'),
-            gallery: path.join(__dirname, 'data/gallery.json')
+            gallery: path.join(__dirname, 'data/gallery.json'),
+            search: path.join(__dirname, 'data/search.json')
 
         }
     }

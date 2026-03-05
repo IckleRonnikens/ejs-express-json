@@ -15,6 +15,8 @@ const BlogService = require('./services/BlogService'); //Loads the blog services
 const GotyService = require('./services/GotyService'); //Loads the goty services module
 const GalleryService = require('./services/GalleryService'); //Loads the gallery services module
 const PersonaliseService = require('./services/PersonaliseService'); //Loads the personalise services module
+const SearchService = require('./services/SearchService');  //Loads the search services module
+
 
 
 const app = express(); 
@@ -28,6 +30,8 @@ const feedbackService = new FeedbackService(config.data.feedback); //Creates a n
 const gotyService = new GotyService(config.data.goty); //Creates a new services and passes in the url for the data from the config
 const galleryService = new GalleryService(config.data.gallery); //Creates a new services and passes in the url for the data from the config
 const personaliseService = new PersonaliseService(config.data.users); //Creates a new services and passes in the url for the data from the config
+const searchService = new SearchService(config.data.search); //Creates a new services and passes in the url for the data from the config
+
 
 
 app.set('view engine', 'ejs');
@@ -62,8 +66,10 @@ app.use('/', routes({
     blogService: blogService,
     gotyService: gotyService,
     personaliseService: personaliseService,
-    galleryService: galleryService
+    galleryService: galleryService,
+    searchService: searchService
 }));
+
 
 
 
