@@ -131,9 +131,9 @@ nav ul li a:hover {color: #fff!important;}
 
 .navbar-toggler-icon { color: #515352!important; }
 
-/**  Header Navigation **/
 
 
+/**  Hero Section **/
 .hero {
   background: url(../images/homepage/home.jpg); 
   background-repeat:no-repeat;
@@ -179,7 +179,6 @@ nav ul li a:hover {color: #fff!important;}
 }
 
 /* ABOUT SECTION */
-
 .about {  
   background-color: #ffffff;
   line-height: 160%;
@@ -189,17 +188,10 @@ nav ul li a:hover {color: #fff!important;}
 .about a:hover {font-weight: bold;}
 .about a {color: #292b2c;}
 
-/* SIDEBAR  */
-.sidebar {
-  line-height: 160%;
-  min-height: 100vh;
-  color: #292b2c;
-  padding: 0 0 0 1em;
-}
 
-/* GAMER SECTION  */
+/* ARTIST SECTION  */
 
-.gamers {
+.artists {
   background-color: #ffffff;
   background-repeat:no-repeat;
   background-position: top;
@@ -207,9 +199,10 @@ nav ul li a:hover {color: #fff!important;}
   background-size: cover;
   position: relative;
   min-height: 100vh;
+  margin-top: 2em;
 }
-.gamers a:hover {color: #292b2c; font-weight: bold;}
-.gamers hr {background-color: #292b2c;}
+.artists a:hover {color: #292b2c; font-weight: bold;}
+.artists hr {background-color: #292b2c;}
 
 
 /* REVIEWS SECTION  */
@@ -254,40 +247,40 @@ nav ul li a:hover {color: #fff!important;}
 }
 
 
-/* GOTY  */
+/* Quotes  */
 
-.featured-goty {
+.featured-quotes {
   background-color: #292b2c;
   position: relative;
   min-height: 100vh;
   color: #ffffff;
 }
-.featured-goty h1, .featured-goty h2, .featured-goty p {color: #ffffff;}
-.featured-goty hr {background-color: #ffffff;}
+.featured-quotes h1, .featured-quotes h2, .featured-quotes p {color: #ffffff;}
+.featured-quotes hr {background-color: #ffffff;}
 
 
-.goty {
+.quotes {
   background-color: #ffffff;
   color: #292b2c;
   font-size: 1.8rem;
   min-height: 100vh;
 }
 
-.goty-details {
+.quotes-details {
   background-color: #ffffff;
   color: #292b2c;
   font-size: 1.8rem;
   min-height: 100vh;
 }
 
-.goty-info {
+.quotes-info {
   background-color: #fff;
   color: #292b2c;
   font-size: 1.8rem;
   min-height: 100vh;
 }
 
-.goty-quote {
+.quotes-quote {
   background-color: #f8f9fa;
   height: auto;
   padding: 0em;
@@ -344,25 +337,7 @@ nav ul li a:hover {color: #fff!important;}
 }
 
 
-/* PAGES  */
 
-/* GAMERS PAGE  */
-
-.gamerslist {
-  background-color: #ffffff;
-  font-size: 1.8rem;
-  padding: 10rem 0 0 0 ;
-  color: #292b2c;
-  min-height: 100vh;
-}
-
-.gamersdetails {
-  background-color: #ffffff;
-  font-size: 1rem;
-  min-height: 100vh;
-  padding: 0rem;
-  color: #292b2c;
-}
 
 /* 404 PAGE  */
 .error {
@@ -376,63 +351,4 @@ nav ul li a:hover {color: #fff!important;}
   color: #fff;
 }
 
-/* FOOTER  */
 
-.footer {
-  background-color: #343a40;
-  width: 100%;
-  height: auto;
-  color: #ffffff;
-  text-align: center;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-}
-
-/* RATING  */
-
-.stars-container {
-  position: relative;
-  display: inline-block;
-  color: transparent;
-  font-size: 2rem;
-}
-
-.stars-container:before{
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '★★★★★';
-  color:lightgray;
-}
-
-.stars-container:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '★★★★★';
-  color: gold;
-  overflow: hidden;
-}
-
-.stars-details {text-align: center;}
-
-.stars-0:after { width: 0%; }
-.stars-10:after { width: 10%; }
-.stars-20:after { width: 20%; }
-.stars-30:after { width: 30%; }
-.stars-40:after { width: 40%; }
-.stars-50:after { width: 50%; }
-.stars-60:after { width: 60%; }
-.stars-70:after { width: 70%; }
-.stars-80:after { width: 80%; }
-.stars-90:after { width: 90%; }
-.stars-100:after { width: 100%;}
-
-/* TABLES  */
-
-table {
-  font-size: 0.8rem;
-}

@@ -5,32 +5,32 @@ const bodyParser = require('body-parser');
 
 const createErrors = require('http-errors');
 const routes = require('./routes/routes');
-const configs = require('./config'); //Loads the config data
+const configs = require('./config'); 
 
 
-const AboutService = require('./services/AboutService');  //Loads the gamer services module
-const GamerService = require('./services/GamerService');  //Loads the gamer services module
-const FeedbackService = require('./services/FeedbackService');  //Loads the feedback services module
-const BlogService = require('./services/BlogService'); //Loads the blog services module
-const GotyService = require('./services/GotyService'); //Loads the goty services module
-const GalleryService = require('./services/GalleryService'); //Loads the gallery services module
-const PersonaliseService = require('./services/PersonaliseService'); //Loads the personalise services module
-const SearchService = require('./services/SearchService');  //Loads the search services module
+const AboutService = require('./services/AboutService');  
+const ArtistService = require('./services/ArtistService');  
+const FeedbackService = require('./services/FeedbackService');  
+const BlogService = require('./services/BlogService'); 
+const QuotesService = require('./services/QuotesService'); 
+const GalleryService = require('./services/GalleryService'); 
+const SearchService = require('./services/SearchService'); 
+const WriterService = require('./services/WriterService');  
 
 
 
 const app = express(); 
-const config = configs[app.get('env')]; //Loads the config for production or development depending on the env
+const config = configs[app.get('env')]; 
 
 
-const aboutService = new AboutService(config.data.about); //Creates a new services and passes in the url for the data from the config
-const gamerService = new GamerService(config.data.gamers); //Creates a new services and passes in the url for the data from the config
-const blogService = new BlogService(config.data.blog); //Creates a new services and passes in the url for the data from the config
-const feedbackService = new FeedbackService(config.data.feedback); //Creates a new services and passes in the url for the data from the config
-const gotyService = new GotyService(config.data.goty); //Creates a new services and passes in the url for the data from the config
-const galleryService = new GalleryService(config.data.gallery); //Creates a new services and passes in the url for the data from the config
-const personaliseService = new PersonaliseService(config.data.users); //Creates a new services and passes in the url for the data from the config
-const searchService = new SearchService(config.data.search); //Creates a new services and passes in the url for the data from the config
+const aboutService = new AboutService(config.data.about); 
+const artistService = new ArtistService(config.data.artists); 
+const blogService = new BlogService(config.data.blog); 
+const feedbackService = new FeedbackService(config.data.feedback); 
+const quotesService = new QuotesService(config.data.quotes); 
+const galleryService = new GalleryService(config.data.gallery); 
+const searchService = new SearchService(config.data.search); 
+const writerService = new WriterService(config.data.writers); 
 
 
 
@@ -47,11 +47,21 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get('/favicon.ico', (req, res, next) => {
     return res.sendStatus(204); 
 });
-//Gets the gamers names for the menu
+
 app.use(async (req, res, next) => {
     try {
-        const names = await gamerService.getNames();
-        res.locals.gamerNames = names;
+        const names = await artistService.getNames();
+        res.locals.artistNames = names;
+        return next();
+    }catch(err){
+        return next(err);
+    }
+});
+
+app.use(async (req, res, next) => {
+    try {
+        const names = await writerService.getNames();
+        res.locals.writerNames = names;
         return next();
     }catch(err){
         return next(err);
@@ -61,13 +71,13 @@ app.use(async (req, res, next) => {
 //Passes the services as a param to the routes
 app.use('/', routes({
     aboutService: aboutService,
-    gamerService: gamerService,
+    artistService: artistService,
     feedbackService: feedbackService,
     blogService: blogService,
-    gotyService: gotyService,
-    personaliseService: personaliseService,
+    quotesService: quotesService,
     galleryService: galleryService,
-    searchService: searchService
+    searchService: searchService,
+    writerService: writerService
 }));
 
 

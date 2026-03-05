@@ -1,0 +1,33 @@
+<%#Import the header%>
+<%- include('templates/header'); -%>
+<%#/Import the header%>
+
+<section class="artists" id="allartists">
+  <div class="container">
+    <h1>Harry and Hermione Artists</h1><hr />
+
+              <%# Artists List Loop %>
+              <% artistslist.forEach(function(artist) { %>
+            <div class="row">
+
+              <div class="col-sm-3">
+                <a href="/artists/<%= artist.shortname %>">
+                  <img class="w-100 " src="/images/artists/<%= artist.shortname %>.jpg" alt="Photo of <%= artist.shortname %>">
+                </a>
+              </div>
+              <div class="col-sm-9 ">
+                <h3><a href="/artists/<%= artist.shortname %>"><%= artist.name %></a></h3>
+                <p><%- artist.summary %></p><br />
+                <a href="/artists/<%= artist.shortname %>"><button class="btn btn-light">View Profile</button></a>
+              </div>
+
+            </div><hr />
+
+              <%  }); %>
+              <%# / Artists List Loop %>
+
+  </div>
+</section>
+<%#Import the footer%>
+<%- include('templates/footer'); -%>
+<%#/Import the footer%>

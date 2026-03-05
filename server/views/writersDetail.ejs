@@ -1,0 +1,53 @@
+<%# Import the header%>
+<%- include('templates/header'); -%>
+<%# /Import the header%>
+
+<section class="writersdetails" id="writerdetails">
+  <div class="container" >
+      <%# Writers Details %>
+      <h1 class="text-center mt-5"><a href="./<%= writer.shortname %>#writerdetails"><%= writer.name %></a></h1><hr />
+
+            <div class="row">
+              <div class="col-sm-3 my-3">
+                <a href="./<%= writer.shortname %>#writerdetails">
+                  <img class="w-100 mb-1 " src="/images/writers/<%= writer.shortname %>.jpg" alt="Photo of <%= writer.title %>">
+                  </a>
+                <img alt="No writer Card Available" class="w-100 mt-5 " src="https://www.trueachievements.com/writercards/<%= writer.writertag %>.png"/>
+
+              </div>
+
+              <div class="col-sm-6 my-3">
+                <p><%- writer.summary %></p>
+                <p><%- writer.description %></p><br />      
+
+              </div>
+          
+              <div class="col-sm-3 my-3">
+                <h3>Recent Reviews</h3><hr />
+                <div class="row">
+                <%# Boxart %>
+                <% if (boxart.reverse().length > 0) { %>
+                  <%for (i=0; i < boxart.length; i ++){ %>
+                      <div class="col-6">
+                        <div class="pixgrid clearfix zoom">
+                          <a href="/blog/<%= boxart[i] %>"><img class="w-100" src="/images/boxart/<%= boxart[i] %>_tn.jpg"></a>
+                          </div>
+                      </div>
+  
+                  <%}%>
+                <% }  %>
+              <%# /Boxart %>
+            </div>
+              </div>
+        
+        </div>
+          </section>
+
+
+      <%# /Writers Details %>
+
+
+        
+<%# Import the footer %>
+<%- include('templates/footer'); -%>
+<%# /Import the footer %>

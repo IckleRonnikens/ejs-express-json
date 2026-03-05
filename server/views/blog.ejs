@@ -4,7 +4,7 @@
 
 
 
-<section class="featured-blog" id="featured">
+<section class="featured-blog mt-5" id="featured">
 
   <div class="row">
     <div class="col-lg-6">
@@ -13,12 +13,12 @@
 
     <div class="col-lg-6 px-5">
       <h1>Featured blog</h1><hr />
-      <%# Gamers List Loop %>
+      <%# Artists List Loop %>
       <% bloglist.slice(-1).forEach(function(blog) { %>
     <div class="row">
 
       <div class="col-sm-4 my-3">
-        <a href="/blog/<%= blog.shortname %>#blogdetails">
+        <a href="/blog/<%= blog.shortname %>">
           <img class="w-100" src="<%= blog.image %>" alt="Photo of <%= blog.shortname %>">
         </a>
       </div>
@@ -26,7 +26,7 @@
         <h2 class="feaured"><%= blog.title %></h2>
         <span class="stars-container stars-<%- blog.rating %>">★★★★★</span> 
         <div class="meta-data mb-3">
-          <a class="btn btn-light btn-sm text-uppercase text-dark" href="/gamers/<%= blog.name %>#gamerdetails"><%= blog.name %></a>
+          <a class="btn btn-light btn-sm text-uppercase text-dark" href="/artists/<%= blog.name %>"><%= blog.name %></a>
           <a class="btn btn-light btn-sm text-uppercase text-dark">blogs</a>
           <a class="btn btn-light btn-sm text-uppercase text-dark"><strong><%= blog.releasedate %></strong></a>
         </div>
@@ -39,7 +39,7 @@
 
     </div><hr />
       <%  }); %>
-      <%# / Gamers List Loop %>
+      <%# / Artists List Loop %>
       </div>
 
     </div>
@@ -55,7 +55,7 @@
     <h1>All blogs</h1><hr />
 
 
-              <%# Gamers List Loop %>
+              <%# Artists List Loop %>
               <% bloglist.reverse().splice(1).forEach(function(blog) { %>
             <div class="row" >
 
@@ -68,7 +68,7 @@
                 <h2><%= blog.title %></h2>
                 <span class="stars-container stars-<%- blog.rating %>">★★★★★</span> 
                 <div class="meta-data mb-3">
-                  <a class="btn btn-light btn-sm text-uppercase" href="/gamers/<%= blog.name %>#gamerdetails"><%= blog.name %></a>
+                  <a class="btn btn-light btn-sm text-uppercase" href="/artists/<%= blog.name %>#artistdetails"><%= blog.name %></a>
                   <a class="btn btn-light btn-sm text-uppercase">blogs</a>
                   <a class="btn btn-light btn-sm text-uppercase"><%= blog.releasedate %></a>
                 </div>
@@ -81,7 +81,7 @@
 
             </div><hr />
               <%  }); %>
-              <%# / Gamers List Loop %>
+              <%# / Artists List Loop %>
 
   </div>
 </section>

@@ -3,31 +3,34 @@ const router = express.Router();
 
 module.exports = (param) => {
 
-    const { gamerService } = param; 
-    const { gotyService } = param;
+    const { artistService } = param; 
 
     router.get('/', async(req, res, next) => {
-        const gamerslist = await gamerService.getList();
-        const gotylist = await gotyService.getList();
-        const allBoxart = await gamerService.getAllBoxart();
-        return res.render('goty', {page: 'Game of the Year', gamerslist, gotylist, boxart: allBoxart});
+
+        const artistslist = await artistService.getList();
+        const allBoxart = await artistService.getAllBoxart();
+
+        return res.render('artists', {page: 'All Artists', artistslist, boxart: allBoxart});
 
     });
 
+ 
     router.get('/:name', async(req, res, next) => {
 
         try {
             const promises = []; 
-            promises.push(gotyService.getGotyDetail(req.params.name)); 
+            promises.push(artistService.getArtist(req.params.name)); 
+            promises.push(artistService.getBoxartForArtist(req.params.name)); 
             const result = await Promise.all(promises) 
-            console.log(result[0])
+
+             
             if(!result[0]){
                 return next();
             }
 
-            return res.render('gotyDetail', {
+            return res.render('artistsDetail', {
                 page: req.params.name, 
-                gotyDetail: result[0],
+                artist: result[0],
                 boxart: result[1],
             });
         }catch (err){

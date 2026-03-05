@@ -1,33 +1,29 @@
 {
-  "gamers": [{
-    "title" : "Arthur Morgan",
-    "name": "The Lone Wanderer",
-    "shortname" : "Arthur_Morgan",
-    "gamertag" : "IckleRonnikens",
-    "summary" : "<p>Playing online video games may seem like the sort of thing you would expect to do with others, but Arthur Morgan isn't known as <u>The Lone Wanderer</u> for nothing. He specialises in single-player driven games, none of this Call of Duty online nonsense, and has been known to prefer solo games over invititations to co-op, which his fellow gamers have come to accept.</p>",
+  "writers": [{
+    "name": "Aeyliana",
+    "shortname" : "aeyliana",
+    "wurl" : "https://archiveofourown.org/users/Aeyliana",
+    "summary" : "<p>Cutest fanart ever.</p>",
     "description": "<p>Growing up in the old west might appear to have given Arthur Morgan a weathered, aged look, but he is still very much a child at heart, who spends the majority of his times inside with a controller in his hands.</p> <p>Also, he may look tough and speak with a filthy mouth, but he is very much an introvert, preferring isolation to the company of others. However, the extent of his social skills is playing video games online with friends, allbeit rarely, and has thought to have some of his best Saturday nights in such company.</p> <p>Arthur Morgan, however, will always return to his single-player games, and no matter what anyone says, there's just no beating such experiences.</p>",
-    "boxart": ["the-outer-worlds", "ori-and-the-will-of-the-wisps", "fallout-4", "burnout-paradise-remastered"]
+    "boxart": ["01", "02", "03", "04"]
   },{
-    "title" : "John Shepard",
-    "name": "The Great Dane",
-    "shortname" : "John_Shepard",
-    "gamertag" : "Stubidoo1988",
-    "summary": "<p>If ever an opportunity passes him by, you can bet that no matter what, even if he's in the middle of another game, John Shepard will always prioritise co-op games over solo games. And it doesn't matter if it's a week later, or six months later, <u>The Great Dane</u> will always get you back to that co-op game you've abandoned and help finish it.</p>",
-    "description": "<p>John Shepard was born on a planet called Earth, a harsh place that saw both his parents gone at a young age, and so video games became his coping mechanism.</p> <p>He was recruited for training at Systems Alliance Army as a teen, which became his home, and spent nearly all his free time gaming, a great passion that saw the involvement of fellow recruits playing online with him all over the galaxy.</p> <p>Fast-forward to the present, and after successfully bringing down the Reapers, he is now Commander John Shepard, with his very own ship, where he spends his time gaming to clear his head, give him an escape from reality, have fun times and sometimes sharing a little too much of his feelings with friends online.</p>",
-    "boxart" : ["indivisible", "assassins-creed-odyssey", "final-fantasy-x-remastered", "kingdom-hearts-3"]
+    "name": "",
+    "shortname" : "",
+    "wurl" : "",
+    "summary": "",
+    "description": "",
+    "boxart" : [""]
   },{
-    "title" : "Clayton Carmine",
     "name": "The Ruiner",
     "shortname" : "Clayton_Carmine",
-    "gamertag" : "FixableHaydos",
+    "artisttag" : "FixableHaydos",
     "summary": "<p>Known as <u>The Ruiner</u>, Clayton Carmine is, for the most part, a lover of gaming who enjoys Action/Adventure games and playing with mates. However, every now and then, whether it be because of a last-minute illness or a want to go to bed early, those plans you made with him for a multiple-hour long gaming session in that newly release game, might just go out the window.</p>",
     "description": "<p>The most seasoned COG in a family of dedicated soldiers, Clayton Carmine muscled his way into Delta Squad to defeat the Locust Queen, Myrrah. He's best known for his quick-witted one-liners and for surviving the most Gears games with the Carmine name without biting the dust.</p> <p>Growing up in Sera is tough and he took up playing video games to take the edge off fighting the Horde. Clayton's lust for action and adventure reflects his preferred genres and tends to switch tactics by choosing the stealthier option.</p> <p>Clayton enjoys both single player and co-operative games. Even if an initial fails when playing online or on the couch with friends, he gets the same amount of satisfaction as blowing stuff up than if the whole squad remained undetected. Just don't get in the way of him and his bacon.</p>",
     "boxart" : ["creature-in-the-well", "transformers-foc", "la-noire", "greedfall"]
   },{
-    "title" : "Connor Arkay",
     "name": "The Kiss of Death",
     "shortname" : "Connor_Arkay",
-    "gamertag" : "none",
+    "artisttag" : "none",
     "summary": "<p>There is only one thing that is known for certain about Connor Arkay, and that is the unknown. <u>The Kiss of Death</u> lives in a foreign state, he plays foreign games, on a foreign platform, and can thoroughly explain every single detail about his experiences but nothing about himself. Expect a comprehensive, educated view about video games the rest of us do not play.</p>",
     "description": "<p>Conner Arkay, aka the Kiss of Death, is an advanced prototype, pulled out of the production line to help write reviews about games of his own kind, of which the others cannot fathom.</p> <p>Connor is a highly intellectual and proficient being, who has a love for gaming and in his spare time, he solves crime. </p>  ",
     "boxart" : ["days-gone", "detroit-become-human","star-wars-jedi-fallen-order", "god-of-war"]
