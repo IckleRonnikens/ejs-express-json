@@ -2,55 +2,58 @@
 <%- include('templates/header'); -%>
 <%#/Import the header%>
 
-<section class="about clearfix" id="about">
-<div class="container">
-  <h1>About</h1><hr />
-  <div class="row">
-    <div class="col-sm-8 my-3">
+<section class="about">
+    <div class="container">
+          <div class="row">
+            <div class="col-lg-12 my-3 py-3">
+              <img src="<?php bloginfo('template_url'); ?>/images/backgrounds/about-page/about.jpg" class="img-fluid col-md-6 float-sm-start m-5" />
 
-          <h2>Numbthumbz Gaming</h2><hr />
-          <p>
-            Here at <u>Numbthumbz</u> gaming, we're all about video games. We love anticipating them, we love playing them and then we love talking about them.
-            So much so, that we like to review video games that we have played and enjoyed. There's no discrimination, a wide variety of games will surely be covered 
-            by the team assembled to produce to you this website.</p>
-
-            <p>
-            However, just so we're clear, if you're looking for an in-depth, over the top and thorough analysis of a video game you're looking to buy,
-            then this may not be the place for you.
+            
+              <h2 class="text-white mt-5">About Harry and Hermione</h2><hr />
+              <p class="body-text">
+              <u>Harry and Hermione</u> is a non-for-profit, fan-created website.<br><br>
+              <u>The original objective</u>: To create a website which replaces the void Portkey.org left behind as a website for fanfiction and forum for discussion based solely on the Harry/Hermione pairing.<br><br>
+              <a href="/fanfiction">Fanfiction</a>: Was to be a place where authors could post their HHR stories.<br><br>
+              The stories would be sorted by readers using a search function similar to what porkey and the archive have (by genres, pairings, rating, and length, options such as including "favorites" are also a possibility).<br><br>
+              <a href="/fanart">Fanart</a>: A section called the “Gallery” would be dedicated to posting fan art and where artists can receive comments for their work<br><br>
+              <u>Forum</u>: As the spiritual successor of the portkey website, we would also try to emulate the forum and its subsections within our own forum.
+              The forum is designed for a variety of discussion that can be had under different topics: a general welcome section with FAQ, announcements,
+              and introduction, a shipping subsection where users could focus on discussions centered around the main Harry/Hermione and any minor ships such
+              as Lily/James and discuss canon/headcanons etc, a subsection dedicated to fanfiction whether it be finding specific fanficton, recommendations,
+              discussing your favorites, or writing your own and discussing with other readers/writers, a subsection dedicated to general talk regarding the
+              Harry Potter fandom that does not relate to the Harry/Hermione pairing, and a subsection for offtopic conversation where users can discuss personal
+              or miscellaneous subjects.<br><br>
+              Unforunately, due to unforseen technical difficulties and lack of knowhow, not everything has worked. The site is what it is, it has it's own identity now.<br>
+              Hopefully, even if one person finds joy from it, or looks at it through rose-coloured glasses, it will have been all worth it.<br>
+              Additionally, once you have had a look around, and if by chance you like what you see, or if you have some suggestions as to what could be done better, feel free to leave a comment here: <a href="/feedback#feedback"><u>Feedback</u></a>.<br>
           </p>
-
-          <p>
-            We specialise in pocket size reviews only, because in the end, pulling apart a video game by listing all of its faults is a waste of everyone's time.
-            We don't want to have a website full of game reviews that are essentially novels, sometimes taking longer to read than playing the game itself.
-            We want to get in and cover the basics, give our brief thoughts and then get out, quick, so we can move on to our next adventure.
-          </p>
-          
-          <p>
-            So please feel free, to have a look around, and if by chance you like what you see, or have some constructive words to give to us, feel free to do 
-            so via our <a href="/feedback#feedback"><u>Feedback</u></a> page, and thanks for coming.
-          </p>
-
-
-    </div>
-    <%# primary %>
-    <div class="col-sm-4 my-3">
-      <h2 >Social</h2><hr />
-
-      <div class="row">
-        <div class="col-3"><i class="fab fa-5x fa-twitter-square  zoom"></i></div>
-        <div class="col-3"><i class="fab fa-5x fa-instagram-square  zoom"></i></div>
-        <div class="col-3"><i class="fab fa-5x fa-youtube-square  zoom"></i></div>
-        <div class="col-3"><i class="fab fa-5x fa-facebook-square  zoom"></i></div>
-
-      </div><hr />
-
-
-
-
-    </div>
-  </div>
-</div>
+          </div>
+        </div>
+      </div>
 </section>
+
+<!-- VIDEO SECTION STARTS -->
+  <section id="hero" class="about-hero bg-white text-black" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 my-3 py-3">
+
+          <video autoplay muted loop class="video">
+            <source src="<?php bloginfo('template_url'); ?>/images/backgrounds/home-page/hero.mp4" type="video/mp4" class="img-fluid embed-responsive embed-responsive-16by9 col-md-6 float-sm-start m-5">
+          </video>
+
+            <h2 class="text-black mt-5">About Harry and Hermione</h2><hr />
+            <p class="body-text">
+            <u>Harry and Hermione</u> is a non-for-profit, fan-created website.<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque molestias iste ducimus corporis ex sapiente! Officia, impedit odit dignissimos mollitia, nulla, sapiente natus quod dicta molestias optio cupiditate enim ipsam.
+          </p>
+         
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- VIDEO SECTION ENDS -->
 
 <%#Import the footer%>
 <%- include('templates/footer'); -%>
