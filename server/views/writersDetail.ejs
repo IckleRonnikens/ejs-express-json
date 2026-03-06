@@ -5,14 +5,16 @@
 <section class="writersdetails" id="writerdetails">
   <div class="container" >
       <%# Writers Details %>
-      <h1 class="text-center mt-5"><a href="./<%= writer.shortname %>#writerdetails"><%= writer.name %></a></h1><hr />
+      <h1 class="text-center mt-5"><a href="./<%= writer.shortname %>"><%= writer.name %></a></h1><hr />
 
             <div class="row">
               <div class="col-sm-3 my-3">
-                <a href="./<%= writer.shortname %>#writerdetails">
+                <a href="./<%= writer.shortname %>">
                   <img class="w-100 mb-1 " src="/images/writers/<%= writer.shortname %>.jpg" alt="Photo of <%= writer.title %>">
                   </a>
-                <img alt="No writer Card Available" class="w-100 mt-5 " src="https://www.trueachievements.com/writercards/<%= writer.writertag %>.png"/>
+                
+                  <a href="<%= writer.wurl %>" target="_blank">AO3</a>
+
 
               </div>
 
@@ -23,7 +25,7 @@
               </div>
           
               <div class="col-sm-3 my-3">
-                <h3>Recent Reviews</h3><hr />
+                <h3>Recent Stories</h3><hr />
                 <div class="row">
                 <%# Boxart %>
                 <% if (boxart.reverse().length > 0) { %>

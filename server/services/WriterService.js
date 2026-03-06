@@ -23,21 +23,21 @@ class WriterService {
         const data = await this.getData();
 
         return data.map((writer) => {
-            return {name:writer.name, shortname: writer.shortname, waul:writer.waul};
+            return {name:writer.name, shortname: writer.shortname, wurl: writer.wurl};
         });
     }
 
     async getList(){
         const data = await this.getData();
         return data.map((writer) => {
-            return {name:writer.name, shortname: writer.shortname, summary: writer.summary, waul:writer.waul};
+            return {name:writer.name, shortname: writer.shortname, summary: writer.summary, wurl: writer.wurl};
         });
     }
 
     async getListShort(){
         const data = await this.getData();
         return data.map((writer) => {
-            return {name:writer.name, shortname: writer.shortname, summary: writer.summary, waul:writer.waul};
+            return {name:writer.name, shortname: writer.shortname, summary: writer.summary, wurl: writer.wurl};
         });
     }
 
@@ -53,7 +53,7 @@ class WriterService {
             shortname: writer.shortname,
             description: writer.description, 
             summary: writer.summary, 
-            waul:writer.waul
+            wurl: writer.wurl
         }
     }
 
