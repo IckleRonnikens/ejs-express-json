@@ -37,7 +37,22 @@
               </div>
 
               <div class="col-sm-6 ">
-                <p class="text-justify"><%- quotesDetail.description %></p>
+      <h1><%= quotesDetail.title %></h1><hr />
+      <div class="pixgrid clearfix ">
+
+        <div class="row">
+          <%# Quotes %>
+            <% if (quotesDetail.length > 0) { %>
+              <%for (i=0; i < quotesDetail.length; i ++){ %>
+                <div class="col-2">
+                    <%- quotesDetail.quotes %>
+                </div>
+              <%}%>
+            <% }  %>
+          <%# /Quotes %>
+        </div>
+      </div>
+
               </div>
 
               <div class="col-sm-3 text-center">
