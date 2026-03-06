@@ -5,25 +5,37 @@
     "aurl" : "https://achiepy.tumblr.com/",
     "summary" : "<p>Cutest fanart ever.</p>",
     "description": "<p>Achiepy is a Harmony fan who's art can be found on Tumblr.</p>",
-    "boxart": ["01", "02", "03", "04"]
+    "boxart": [
+  "01", "02", "03", "04", "05",
+  "06", "07", "08", "09", "10",
+  "11", "12", "13", "14", "15",
+  "16", "17", "18", "19", "20",
+  "21", "22", "23", "24", "25",
+  "26", "27", "28", "29", "30",
+  "31", "32", "33", "34"]
   },{
     "name": "Adalovelaced",
     "shortname" : "adalovelaced",
-    "aurl" : "",
+    "aurl" : "https://www.instagram.com/a.loveunlaced/",
     "summary": "",
     "description": "",
-    "boxart" : [""]
+    "boxart" : ["01", "02", "03"]
   },{
-    "name": "The Ruiner",
-    "shortname" : "Clayton_Carmine",
-    "summary": "<p>Known as <u>The Ruiner</u>, Clayton Carmine is, for the most part, a lover of gaming who enjoys Action/Adventure games and playing with mates. However, every now and then, whether it be because of a last-minute illness or a want to go to bed early, those plans you made with him for a multiple-hour long gaming session in that newly release game, might just go out the window.</p>",
-    "description": "<p>The most seasoned COG in a family of dedicated soldiers, Clayton Carmine muscled his way into Delta Squad to defeat the Locust Queen, Myrrah. He's best known for his quick-witted one-liners and for surviving the most Gears games with the Carmine name without biting the dust.</p> <p>Growing up in Sera is tough and he took up playing video games to take the edge off fighting the Horde. Clayton's lust for action and adventure reflects his preferred genres and tends to switch tactics by choosing the stealthier option.</p> <p>Clayton enjoys both single player and co-operative games. Even if an initial fails when playing online or on the couch with friends, he gets the same amount of satisfaction as blowing stuff up than if the whole squad remained undetected. Just don't get in the way of him and his bacon.</p>",
-    "boxart" : ["creature-in-the-well", "transformers-foc", "la-noire", "greedfall"]
+    "name": "Amandioka",
+    "shortname" : "amandioka",
+    "summary": "<p>This is made up content.</p>",
+    "description": "<p>There is no need for a description as well... </p>  ",
+    "boxart" : ["01", "02", "03", "04", "05"]
   },{
-    "name": "The Kiss of Death",
-    "shortname" : "Connor_Arkay",
-    "summary": "<p>There is only one thing that is known for certain about Connor Arkay, and that is the unknown. <u>The Kiss of Death</u> lives in a foreign state, he plays foreign games, on a foreign platform, and can thoroughly explain every single detail about his experiences but nothing about himself. Expect a comprehensive, educated view about video games the rest of us do not play.</p>",
-    "description": "<p>Conner Arkay, aka the Kiss of Death, is an advanced prototype, pulled out of the production line to help write reviews about games of his own kind, of which the others cannot fathom.</p> <p>Connor is a highly intellectual and proficient being, who has a love for gaming and in his spare time, he solves crime. </p>  ",
-    "boxart" : ["days-gone", "detroit-become-human","star-wars-jedi-fallen-order", "god-of-war"]
+    "name": "Angie",
+    "shortname" : "angie",
+    "summary": "<p>This is made up content.</p>",
+    "description": "<p>There is no need for a description as well... </p>  ",
+    "boxart" : [
+  "01", "02", "03", "04", "05",
+  "06", "07", "08", "09", "10",
+  "11", "12", "13", "14", "15",
+  "16", "17", "18", "19", "20"
+    ]
   }]
 }
