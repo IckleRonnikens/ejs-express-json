@@ -80,9 +80,6 @@ app.use('/', routes({
     writerService: writerService
 }));
 
-
-
-
 app.use((req, res, next) => {
     return next(createErrors(404, 'File not found'))
 });
