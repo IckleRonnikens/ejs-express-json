@@ -45,5 +45,13 @@
     "boxart" : [
   "01", "02", "03", "04", "05",
   "06", "07", "08"]
+  },{
+    "name": "Arishatistic",
+    "shortname" : "arishatistic",
+    "summary": "<p>This is made up content.</p>",
+    "description": "<p>There is no need for a description as well... </p>  ",
+    "boxart" : [
+  "01", "02", "03", "04", "05",
+  "06", "07", "08"]
   }]
 }
