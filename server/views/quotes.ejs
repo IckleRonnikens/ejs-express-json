@@ -2,73 +2,38 @@
 <%- include('templates/header'); -%>
 <%#/Import the header%>
 
-<section class="featured-quotes" id="featured">
-
-  <div class="row">
-    <div class="col-lg-6">
-<img src="../images/misc/bg-featured-quotes.jpg" class="w-100 h-100" />
-    </div>
-
-    <div class="col-lg-6 px-5">
-      <h1>Featured Game of the Year</h1><hr />
-      <%# Artists List Loop %>
-      <% quoteslist.slice(-1).forEach(function(quotes) { %>
-    <div class="row">
-
-      <div class="col-sm-4 my-3">
-        <a href="/quotes/<%= quotes.shortname %>#quotesdetails">
-          <img class="w-100" src="<%= quotes.image %>" alt="Photo of <%= quotes.shortname %>">
-        </a>
-      </div>
-      <div class="col-sm-8 my-3">
-        <h2><%= quotes.title %></h2>
-        <div class="meta-data mb-3">
-          <a class="btn btn-light btn-sm text-uppercase text-dark" href="/artists/<%= quotes.name %>#artistdetails"><%= quotes.shortname %></a>
-          <a class="btn btn-light btn-sm text-uppercase text-dark">quotess</a>
-          <a class="btn btn-light btn-sm text-uppercase text-dark"><%= quotes.releasedate %></a>
-        </div>
-
-        <p><%- quotes.summary %></p>
-
-          <a href="/quotes/<%= quotes.shortname %>#quotesdetails"><button class="btn btn-light btn-lg">Read More</button></a>
-        
-      </div>
-
-    </div><hr />
-      <%  }); %>
-      <%# / Artists List Loop %>
-      </div>
-
-    </div>
-  </div>
-</section>
-<div class="clearfix"></div>
-
-
-<section class="quotes" id="quotes">
+<section class="quotes mt-5" id="quotes">
   <div class="container">
-    <h1>Previous Game of the Year Winners</h1><hr />
+
+            <h1 class="text-dark py-5">The H/Hr Quotes Masterlist</h1>
+
+        <p class="body-text">This H/Hr quote collection was compiled by Users @Crazy and @Indo_Carib over at the HMS Harmony discord.<br>
+        You can find the discord here: <a href="https://discord.gg/2GcXw8R" target="_blank">HMS Harmony Discord</a><br>
+        Not all of the quotes here will be explicitly romantic quotes; they are quotes that contribute to our understanding of Harry and Hermione as people, their interactions with each other, and their relationship which shone in all the moments, big or small. Every bizarre situation they found themselves in, whether in a straightforward or subtle way. Canon is full to the brim with moments that showcase Harry and Hermione’s relationship, strong friendship, and foundation of trust, love, and understanding that belongs only to them.<br>
+        These quotes are the wood and nails that built the ship H.M.S. Harmony. </p><hr>
+
+
 
               <%# Artists List Loop %>
-              <% quoteslist.reverse().splice(1).forEach(function(quotes) { %>
+              <% quoteslist.forEach(function(quotes) { %>
             <div class="row">
 
               <div class="col-sm-3 my-3">
-                <a href="/quotes/<%= quotes.shortname %>#quotesdetails">
+                <a href="/quotes/<%= quotes.shortname %>">
                   <img class="w-100" src="<%= quotes.image %>" alt="Photo of <%= quotes.shortname %>">
                 </a>
               </div>
               <div class="col-sm-9 my-3">
-                <h3><a href="/quotes/<%= quotes.shortname %>#quotesdetails"></a><%= quotes.shortname %> - <%= quotes.title %></a></h3>
+                <h3><a href="/quotes/<%= quotes.shortname %>"></a><%= quotes.shortname %> - <%= quotes.title %></a></h3>
                 <div class="meta-data mb-3">
-                  <a class="btn btn-light btn-sm text-lowercase" href="/artists/<%= quotes.shortname %>#artistdetails"><%= quotes.title %></a>
+                  <a class="btn btn-light btn-sm text-lowercase" href="/artists/<%= quotes.shortname %>"><%= quotes.title %></a>
                   <a class="btn btn-light btn-sm text-lowercase">Quotes</a>
                   <a class="btn btn-light btn-sm text-lowercase"><strong><%= quotes.shortname %></strong></a>
                 </div>
 
                 <p><%- quotes.summary %></p>
 
-                  <a href="/quotes/<%= quotes.shortname %>#quotesdetails"><button class="btn btn-light btn-lg">Read More</button></a>
+                  <a href="/quotes/<%= quotes.shortname %>"><button class="btn btn-light btn-lg">Read More</button></a>
                 
               </div>
 

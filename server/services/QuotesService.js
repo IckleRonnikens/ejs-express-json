@@ -20,7 +20,7 @@ class QuotesService {
     async getList(){
         const data = await this.getData();
         return data.map((quotes) => {
-            return {second: quotes.second, third: quotes.third, shortname: quotes.shortname, title: quotes.title, summary: quotes.summary, image: quotes.image, genre: quotes.genre, developer: quotes.developer, publisher: quotes.publisher, releasedate: quotes.releasedate, rating: quotes.rating};
+            return {shortname: quotes.shortname, title: quotes.title, summary: quotes.summary, image: quotes.image, releasedate: quotes.releasedate, quotes: quotes.quotes};
         });
     }
 
@@ -33,16 +33,10 @@ class QuotesService {
 
         return {
             title: quotes.title,
-            second: quotes.second,
-            third: quotes.third,
             shortname: quotes.shortname,
-            description: quotes.description,
+            quotes: quotes.quotes,
             image: quotes.image,
-            genre: quotes.genre, 
-            developer: quotes.developer, 
-            publisher: quotes.publisher, 
             releasedate: quotes.releasedate,
-            rating: quotes.rating
         }
     }
 }

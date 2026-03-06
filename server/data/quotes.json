@@ -1,101 +1,62 @@
 {
   "quotes": [
   {
-    "title" : "Grand Theft Auto V",
-    "second": "bioshock-infinite",
-    "third": "the-last-of-us",
-    "image": "https://live.staticflickr.com/65535/49723584907_77df45540e_o.jpg",
-    "genre": "Metroidvania",
-    "developer": "Rockstar North",
-    "publisher": "Rockstar Games",
+    "title" : "Harry Potter and the Philosopher's Stone",
+    "image": "/images/quotes/ps.jpg",
     "releasedate": "September 17, 2013",
-    "rating": "100",
-    "shortname" : "2013",
-    "summary": "<p>Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV.</p>",
-    "description": "<p></p>"
+    "shortname" : "philosophers-stone",
+    "summary": "<p>Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.</p>",
+    "quotes": [
+      "",
+      ""
+    ]
   },
   {
-    "title" : "Destiny",
-    "second": "forza-horizon-2",
-    "third": "farcry-4",
-    "image": "https://live.staticflickr.com/65535/49723696456_914fb80cfd_o.jpg",
-    "genre": "RPG",
-    "developer": "Bungie",
-    "publisher": "Bungie",
+    "title" : "Harry Potter and the Chamber of Secrets",
+    "image": "/images/quotes/cos.jpg",
     "releasedate": "September 9, 2014",
-    "rating": "70",
-    "shortname" : "2014",
-    "summary": "<p>Destiny is an online-only multiplayer first-person shooter video game developed by Bungie and self-published by Bungie after separating from Activision in 2019.</p>",
-    "description": "<p></p>"
+    "shortname" : "chamber-of-secrets",
+    "summary": "<p>A house-elf warns Harry against returning to Hogwarts, but he decides to ignore it. When students and creatures at the school begin to get petrified, Harry finds himself surrounded in mystery.</p>",
+    "quotes": "<p></p>"
   },
   {
-    "title" : "The Witcher 3",
-    "second": "fallout-4",
-    "third": "ori-and-the-blind-forest",
-    "image": "https://live.staticflickr.com/65535/49724214941_b9e38e29ab_o.jpg",
-    "genre": "RPG",
-    "developer": "CD Projekt",
-    "publisher": "CD Projekt",
+    "title" : "Harry Potter and the Prisoner of Azkaban",
+    "image": "/images/quotes/poa.jpg",
     "releasedate": "May 19, 2015",
-    "rating": "80",
-    "shortname" : "2015",
-    "summary": "<p>The Witcher 3: Wild Hunt is a 2015 action role-playing game developed and published by CD Projekt and based on The Witcher series of fantasy novels by Andrzej Sapkowski. It is the sequel to the 2011 game The Witcher 2: Assassins of Kings, played in an open world with a third-person perspective. </p>",
-    "description":  "<p></p>"
+    "shortname" : "prisoner-of-azkaban",
+    "summary": "<p>Harry Potter's third year at Hogwarts turns out to be eventful as he gets tutored by Professor Lupin, a Defence Against the Dark Arts teacher, and tackles Sirius Black, a vengeful fugitive prisoner.</p>",
+    "quotes":  "<p></p>"
   },
   {
-      "title": "Inside",
-      "second": "dishonored-2",
-      "third": "firewatch",
-      "image": "https://live.staticflickr.com/65535/49723584882_d92d3b0ce8_o.jpg",
-      "genre": "Puzzle-Platformer Adventure",
-      "developer": "Playdead",
-      "publisher": "Playdead",
+      "title": "Harry Potter and the Goblet of Fire",
+      "image": "/images/quotes/gof.jpg",
       "releasedate": "29 June 2016",
-      "rating": "60",
-      "shortname": "2016",
-      "summary": "<p>Inside is a puzzle-platformer adventure game developed and published by Playdead in 2016 for PlayStation 4, Xbox One and Microsoft Windows. The game was released for iOS in December 2017 and Nintendo Switch in June 2018. The player controls a boy in a dystopic world, solving environmental puzzles and avoiding death.</p>",
-      "description": "<p></p>"
+      "shortname": "goblet-of-fire",
+      "summary": "<p>In his fourth year at Hogwarts, Harry must reluctantly compete in an ancient wizard tournament after someone mysteriously selects his name, while the Dark Lord secretly conspires something sinister.</p>",
+      "quotes": "<p></p>"
   },
   {
-      "title": "Hellblade: Senua's Sacrifice",
-      "second": "what-remains-of-edith-finch",
-      "third": "horizon-zero-dawn",
-      "image": "https://live.staticflickr.com/65535/49744315013_0326202be2_o.jpg",
-      "genre": "Adventure",
-      "developer": "Ninja Theory",
-      "publisher": "Ninja Theory",
+      "title": "Harry Potter and the Order of the Phoenix",
+      "image": "/images/quotes/ootp.jpg",
       "releasedate": "August 8, 2017",
-      "rating": "",
-      "shortname": "2017",
-      "summary": "<p>The story of Hellblade is based on Celtic and Norse mythology and follows the story of a Pict warrior named Senua as she embarks on a very personal journey through a hellish underworld.</p>",
-      "description": "<p></p>"
+      "shortname": "order-of-the-phoenix",
+      "summary": "<p>Harry Potter and Dumbledore's warning about the return of Lord Voldemort is not heeded by the wizard authorities who, in turn, look to undermine Dumbledore's authority at Hogwarts and discredit Harry.</p>",
+      "quotes": "<p></p>"
   },
   {
-      "title": "God of War",
-      "second": "assassins-creed-odyssey",
-      "third": "red-dead-rededmption-2",
-      "image": "https://live.staticflickr.com/65535/49744850516_350e25c41f_o.jpg",
-      "genre": "Action-Adventure",
-      "developer": "SIE Santa Monica Studio",
-      "publisher": "Sony",
+      "title": "Harry Potter and the Half-Blood Prince",
+      "image": "/images/quotes/hbp.jpg",
       "releasedate": "April 20, 2018",
-      "rating": "9.5/10",
-      "shortname": "2018",
-      "summary": "<p>God of War is the eighth installment in the franchise overall. Unlike previous installments, this game focuses on Norse mythology and follows an older and more seasoned Kratos and his new son Atreus in the years since God of War III.</p>",
-      "description": "<p></p>"
+      "shortname": "half-blood-prince",
+      "summary": "<p>Dumbledore and Harry Potter learn more about Voldemort's past and his rise to power. Meanwhile, Harry stumbles upon an old potions textbook belonging to a person calling himself the Half-Blood Prince.</p>",
+      "quotes": "<p></p>"
   },
   {
-    "title" : "The Outer Worlds",
-    "second": "days-gone",
-    "third": "void-bastards",
-    "image": "https://live.staticflickr.com/65535/49608005233_dd4c71a9c5_o.jpg",
-    "genre": "RPG",
-    "developer": "Obsidian Entertainment",
-    "publisher": "Private Division",
+    "title" : "Harry Potter and the Deathly Hallows",
+    "image": "/images/quotes/dh.jpg",
     "releasedate": "October 25, 2019",
-    "rating": "9/10",
-    "shortname" : "2019",
-    "summary": "<p>The Outer Worlds is an action role-playing game developed by Obsidian Entertainment and published by Private Division.</p>",
-    "description": "<p></p>"
+    "shortname" : "deathly-hallows",
+    "summary": "<p>Harry Potter is tasked with the dangerous and seemingly impossible task of locating and destroying Voldemort's remaining Horcruxes.</p>",
+    "quotes": "<p></p>"
   }]
 }
