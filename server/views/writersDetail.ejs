@@ -13,14 +13,15 @@
                   <img class="w-100 mb-1 " src="/images/writers/<%= writer.shortname %>.jpg" alt="Photo of <%= writer.title %>">
                   </a>
                 
-                  <a href="<%= writer.wurl %>" target="_blank">AO3</a>
 
 
               </div>
 
               <div class="col-sm-6 my-3">
                 <p><%- writer.summary %></p>
-                <p><%- writer.description %></p><br />      
+                <p><%- writer.description %></p>
+                <a href="<%= writer.wurl %>" target="_blank">AO3</a>
+                <br />      
 
               </div>
           
